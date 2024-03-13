@@ -1,0 +1,14 @@
+/* styles.css */
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+article {
+    margin-bottom: 20px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
