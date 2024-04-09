@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crawford Land Clearing provides land clearing services. Contact us for more information.">
+    <meta name="keywords" content="Crawford Land Clearing, land clearing, landscaping, construction, earthwork">
+    <meta name="author" content="Frank Crawford">
+    <title>Crawford Land Clearing</title>
+    <link rel="stylesheet" href="landacre.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a; 
+            color: #ffffff; 
+            padding: 20px;
+            text-align: center;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            margin-left: 10px; 
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: #ffffff; 
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ffcc00; 
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        article {
+            margin: 0 auto;
+            max-width: 600px; 
+        }
+
+        img {
+            max-width: 100%; 
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #1a1a1a; 
+            color: #ffffff; 
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMG_E0091.JPG" alt="logo" width="66"> 
+        <h1>Crawford Land Clearing</h1> 
+        <nav>
+            843-729-6756 |
+            <a href="location.html">Location</a> |
+            <a href="form.html">Form</a> |
+            <a href="contactpg.html">Contacts</a> |
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <h2>Professional Land Clearing Estimate</h2>
+            <p>Fill out the following details to get an estimate for your land clearing job:</p>
+            <form id="landClearingForm" action="#" method="POST">
+                <label for="landSize">Land Size (in acres):</label><br>
+                <input type="number" id="landSize" name="landSize" placeholder="E.g., 10 acres" required><br><br>
+
+                <label for="vegetationType">Type of Vegetation:</label><br>
+                <select id="vegetationType" name="vegetationType" required>
+                    <option value="">Select vegetation type</option>
+                    <option value="Grass">Grass</option>
+                    <option value="Shrubs">Shrubs</option>
+                    <option value="Trees">Trees</option>
+                    <option value="Forest">Forest</option>
+                </select><br><br>
+
+                <label for="terrain">Terrain:</label><br>
+                <select id="terrain" name="terrain" required>
+                    <option value="">Select terrain</option>
+                    <option value="Flat">Flat</option>
+                    <option value="Sloped">Sloped</option>
+                    <option value="Rough">Rough</option>
+                </select><br><br>
+
+                <label for="additionalServices">Additional Services:</label><br>
+                <input type="checkbox" id="stumpRemoval" name="stumpRemoval">
+                <label for="stumpRemoval">Stump Removal</label><br>
+                <input type="checkbox" id="grubbing" name="grubbing">
+                <label for="grubbing">Grubbing</label><br><br>
+
+                <input type="submit" value="Get Estimate">
+            </form>
+            <div id="estimateResult"></div> 
+        </article>
+    </section>
+    <footer>Crawford Land Clearing | Last Updated March 24, 2024</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
